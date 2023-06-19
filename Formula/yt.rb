@@ -1,8 +1,8 @@
 class Yt < Formula
-  desc "Native Dart interface to multiple YouTube REST APIs including the Data API, Live Streaming API and Cloud Vision API."
+  desc "Native Dart interface to multiple YouTube REST APIs including the Data API."
   homepage "https://github.com/faithoflifedev/yt"
-  url "https://api.github.com/repos/faithoflifedev/yt/tarball/v2.2.0-dev.2"
-  sha256 "a3b38b0312d21562f3c2ce18e506ec38a722e7bfab585433ebc18cd2e8862221"
+  url "https://api.github.com/repos/faithoflifedev/yt/tarball/v2.2.1"
+  sha256 "1193f6e8911941ee577a2442e91d555ff50842f31acaa622bd4a8f8bb02eec53"
   license "MIT"
   
   depends_on "dart-lang/dart/dart" => :build
@@ -14,6 +14,6 @@ class Yt < Formula
   end
   
   test do
-    assert_match "obs_websocket v2.2.0-dev.2", shell_output("bin/yt version")
+    assert_match "obs_websocket v2.2.1", shell_output("bin/yt version")
   end
 end
